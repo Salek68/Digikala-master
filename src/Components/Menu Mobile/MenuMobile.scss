@@ -1,0 +1,173 @@
+@mixin AllItems($py, $px) {
+  padding: $py $px;
+  color: #a6a8ad;
+  font-size: 0.8rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@mixin Items($py, $px) {
+  padding: $py $px;
+  color: #0c0c0c;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: lighter;
+}
+
+@mixin CategoryItems($py, $px) {
+  padding: $py $px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  color: #424750;
+  cursor: pointer;
+}
+
+.aside-mobile {
+  position: fixed;
+  width: 310px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: white;
+  z-index: 10;
+  transform: translate(100%) scaleX(-100%);
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+
+  &.menu-show {
+    transform: translate(0) scaleX(-100%);
+  }
+
+  header {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+    transform: scaleX(-100%);
+
+    img {
+      width: 95px;
+    }
+  }
+
+  hr {
+    width: 85%;
+    margin: 2px auto;
+    height: 0.5px;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    transform: scaleX(-100%);
+
+    a {
+      text-decoration: none;
+      color: #424750;
+      padding: 20px;
+      font-size: 0.8rem;
+    }
+
+    h6 {
+      color: #0c0c0c;
+      padding: 15px 20px;
+      font-size: 0.96rem;
+      font-weight: normal;
+    }
+
+    .category-items {
+      @include CategoryItems(15px, 20px);
+
+      &.inside {
+        padding-right: 40px;
+      }
+
+      span {
+        pointer-events: none;
+      }
+
+      &.open {
+        color: red;
+
+        .icons {
+          transform: rotate(180deg);
+        }
+
+        & + section {
+          display: block;
+        }
+      }
+
+      .icons {
+        font-size: 1.3rem;
+        pointer-events: none;
+      }
+    }
+
+    section {
+      transform: scaleX(100%);
+      background-color: #f0f0f1;
+      display: none;
+
+      .exception {
+        padding: 15px 40px;
+        color: #424750;
+      }
+
+      a:first-child {
+        @include AllItems(10px, 40px);
+      }
+
+      a {
+        @include Items(20px, 55px);
+      }
+
+      section {
+        a:first-child {
+          @include AllItems(10px, 55px);
+        }
+
+        a {
+          @include Items(15px, 55px);
+          font-family: Vaziri-Light;
+        }
+
+        hr {
+          background-color: #e0e0e2;
+          width: 85%;
+          margin: 10px auto;
+          height: 0.5px;
+        }
+      }
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: #0c0c0c;
+  opacity: 0.5;
+  display: none;
+  z-index: 9;
+
+  &.backdrop-show {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  aside {
+    display: none;
+  }
+
+  .backdrop.backdrop-show {
+    display: none;
+  }
+}

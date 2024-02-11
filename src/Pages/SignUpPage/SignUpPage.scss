@@ -1,0 +1,136 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .signup-main {
+    width: 100%;
+
+    .logo {
+      width: 150px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    header {
+      direction: rtl;
+      width: 100%;
+      padding: 0 20px;
+
+      h3 {
+        font-weight: 100;
+        margin-bottom: 18px;
+      }
+      p {
+        font-size: 0.72rem;
+        line-height: 25px;
+        color: #424750;
+        font-family: Vaziri-Light;
+        font-weight: 500;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.1rem;
+      padding: 0 20px;
+      margin-top: 15px;
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        input {
+          border: none;
+          outline: none;
+          color: #424750;
+          padding: 12px 18px;
+          direction: rtl;
+          border-radius: 8px;
+          border-bottom: 2px solid #4dd0e1;
+          background-color: #f0f0f1;
+          caret-color: #4dd0e1;
+
+          &.err {
+            border-color: #ef4056 !important;
+          }
+        }
+
+        .error {
+          color: #ba281c;
+          direction: rtl;
+          font-size: 0.7rem;
+        }
+      }
+      button {
+        border: none;
+        outline: none;
+        padding: 12px 18px;
+        border-radius: 8px;
+        color: white;
+        background-color: #ef4056;
+        cursor: pointer;
+      }
+    }
+    p.note {
+      font-size: 0.72rem;
+      line-height: 25px;
+      color: #424750;
+      font-family: Vaziri-Light;
+      font-weight: 500;
+      direction: rtl;
+      padding: 0 20px;
+      margin-top: 10px;
+
+      a {
+        text-decoration: none;
+        font-family: Vaziri-Light;
+        color: #3da4d1;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .signup-main {
+    max-width: 400px;
+    min-height: 440.25px;
+    padding: 32px;
+    border: 1px solid #e0e0e2;
+    border-radius: 10px;
+
+    header {
+      padding: 0 !important;
+
+      p {
+        font-size: 0.75rem !important;
+      }
+    }
+
+    form {
+      padding: 0 !important;
+
+      input {
+        border: 1px solid #4dd0e1 !important;
+        background-color: white !important;
+
+        &.err {
+          border-color: #ef4056 !important;
+        }
+      }
+    }
+
+    p.note {
+      padding: 0 !important;
+      margin-top: 30px !important;
+      font-size: 0.73rem !important;
+    }
+  }
+}

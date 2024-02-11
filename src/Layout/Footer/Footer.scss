@@ -1,0 +1,555 @@
+.main-footer {
+  max-width: 1676px;
+  margin: 0 auto;
+  margin-top: 48px !important;
+  border-top: 1px solid #f1f2f4;
+
+  .footer-container {
+    padding: 0 20px;
+
+    .section-go-up-and-logo {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 35px;
+
+      button {
+        direction: rtl;
+        background-color: transparent;
+        border: 1px solid #e0e0e6;
+        padding: 8px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #9e9fb1;
+        border-radius: 8px;
+        cursor: pointer;
+        gap: 10px;
+
+        .icon {
+          font-size: 1.3rem;
+        }
+      }
+
+      .logo {
+        width: 110px;
+        display: flex;
+      }
+    }
+
+    .details-support {
+      direction: rtl;
+      margin-top: 20px;
+
+      .line {
+        display: none;
+      }
+
+      p {
+        font-family: Vaziri-Light;
+        font-size: 0.78rem;
+        line-height: 25px;
+        color: #3f4064;
+      }
+    }
+
+    .digikala-option {
+      display: none;
+    }
+
+    .register-and-questions {
+      display: flex;
+      flex-wrap: wrap;
+      direction: rtl;
+      margin-top: 20px;
+
+      .hidden {
+        display: none !important;
+      }
+
+      .register-box {
+        direction: rtl;
+        width: 100%;
+
+        div:first-child {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 0;
+
+          h3 {
+            font-family: Vaziri-Light;
+            color: #3f4064;
+            font-size: 1rem;
+          }
+
+          .social-networks-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            span {
+              font-size: 1.8rem;
+              color: #9e9fb1;
+              cursor: pointer;
+            }
+          }
+        }
+
+        form {
+          display: flex;
+          gap: 5px;
+
+          button {
+            background-color: #e0e0e6;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+
+          input {
+            border: none;
+            outline: none;
+            background-color: #f1f2f4;
+            padding: 15px;
+            border-radius: 8px;
+            caret-color: #ef4056;
+            color: #3f4064;
+            flex-grow: 1;
+
+            &::placeholder {
+              color: #9e9eb7;
+            }
+          }
+        }
+      }
+
+      .question-box {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        line-height: 35px;
+
+        h4 {
+          font-family: Vaziri-Light;
+          color: #3f4064;
+          font-size: 0.9rem;
+        }
+
+        a {
+          font-family: Vaziri-Light;
+          color: #767790;
+          font-size: 0.81rem;
+        }
+      }
+    }
+
+    .install-app-container {
+      background-color: #3c4b6d;
+      display: flex;
+      flex-direction: column;
+      border-radius: 8px;
+      margin-top: 20px;
+      padding: 15px;
+
+      .hidden {
+        display: none !important;
+      }
+
+      .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        div {
+          color: white;
+          font-size: 1.2rem;
+          margin-bottom: 30px;
+        }
+
+        .img-container {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .installation-methods-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+
+        .img-container {
+          height: 44px;
+          overflow: hidden;
+          border-radius: 5px;
+          display: flex;
+        }
+      }
+
+      .more-information-box {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          direction: rtl;
+          color: white;
+          font-size: 0.8rem;
+        }
+      }
+    }
+
+    .about-digikala {
+      margin-top: 30px;
+      border-top: 1px solid #f1f2f4;
+      border-bottom: 1px solid #f1f2f4;
+      padding: 30px 0;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 20px;
+
+      div:first-child {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        a {
+          padding: 8px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid #e0e0e6;
+          border-radius: 15px;
+
+          .img-container {
+            width: 75px;
+            height: 75px;
+          }
+        }
+      }
+
+      .description {
+        direction: rtl;
+        h5 {
+          font-family: Vaziri-Light;
+          margin-bottom: 15px;
+          font-size: 0.85rem;
+        }
+
+        p {
+          font-size: 0.75rem;
+          color: #767790;
+          margin-bottom: 10px;
+          line-height: 2.2;
+        }
+
+        a {
+          font-size: 0.85rem;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          color: #767790;
+
+          .icon {
+            color: #19bfd3;
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    .digikala-rights {
+      direction: rtl;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+      color: #767790;
+      font-size: 0.6rem;
+      font-family: Vaziri-Light;
+    }
+  }
+
+  .companies {
+    background-color: #e0e0e6;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+
+    a {
+      background-color: #f1f2f4;
+      height: 80px;
+      width: 33%;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+    }
+
+    .img-container {
+      height: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main-footer {
+    .footer-container {
+      .details-support {
+        .line {
+          display: inline-block;
+          margin: 0 20px;
+          color: #9e9fb1;
+        }
+        p {
+          display: inline;
+        }
+      }
+
+      .digikala-option {
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 0;
+
+        a {
+          flex-grow: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          p {
+            color: #3f4064;
+            font-size: 0.75rem;
+            font-family: Vaziri-Light;
+            direction: rtl;
+          }
+
+          .img-container {
+            width: 56px;
+            height: 56px;
+          }
+        }
+      }
+
+      .register-and-questions {
+        flex-wrap: nowrap;
+        direction: rtl;
+        margin-top: 20px;
+
+        .hidden {
+          display: flex !important;
+        }
+
+        .register-box {
+          width: 86%;
+
+          div:first-child {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 0;
+            gap: 15px;
+
+            h3 {
+              font-size: 1rem;
+              text-align: right;
+              width: 100%;
+            }
+
+            .social-networks-container {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              gap: 30px;
+              width: 100%;
+
+              span {
+                font-size: 2.2rem;
+                color: #9e9fb1;
+                cursor: pointer;
+                padding: 5px;
+              }
+            }
+          }
+
+          div:last-child {
+            h3 {
+              color: #3f4064;
+              font-family: Vaziri-Light;
+              font-size: 1rem;
+              margin-bottom: 15px;
+              margin-top: 10px;
+            }
+          }
+
+          form {
+            display: flex;
+            gap: 5px;
+
+            button {
+              background-color: #e0e0e6;
+              border: none;
+              color: white;
+              padding: 12px 15px;
+              border-radius: 8px;
+              cursor: pointer;
+              font-size: 1rem;
+            }
+
+            input {
+              padding: 13px;
+              font-size: 1rem;
+            }
+          }
+        }
+
+        .question-box {
+          width: 100%;
+
+          h4 {
+            font-size: 1rem;
+          }
+
+          a {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .install-app-container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+
+        .title {
+          div {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+          }
+
+          .img-container {
+            width: 44px;
+            height: 44px;
+          }
+        }
+
+        .hidden {
+          display: flex !important;
+          background-color: white;
+        }
+
+        .more-information-box {
+          display: none !important;
+        }
+      }
+
+      .about-digikala {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        div:first-child {
+          display: flex;
+          justify-content: flex-start;
+          gap: 10px;
+          width: 50%;
+
+          a {
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #e0e0e6;
+            border-radius: 15px;
+
+            .img-container {
+              width: 75px;
+              height: 75px;
+            }
+          }
+        }
+
+        .description {
+          direction: rtl;
+          width: 50%;
+
+          h5 {
+            font-family: Vaziri-Light;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+          }
+
+          p {
+            font-size: 0.8rem;
+            color: #767790;
+            margin-bottom: 10px;
+            line-height: 2.2;
+          }
+
+          a {
+            font-size: 0.9rem;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: #767790;
+
+            .icon {
+              color: #19bfd3;
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+
+      .digikala-rights {
+        font-size: 0.75rem;
+      }
+    }
+
+    .companies {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-end;
+      gap: 0.1px;
+
+      a {
+        height: 80px;
+        width: 12%;
+        padding: 0 20px;
+        border: 0.5px solid #e0e0e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-grow: 1;
+
+        &:nth-child(n + 8) {
+          width: 11%;
+        }
+      }
+
+      .img-container {
+        height: 20px;
+
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}

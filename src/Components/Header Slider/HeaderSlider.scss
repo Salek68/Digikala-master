@@ -1,0 +1,107 @@
+.slider-container {
+  .swiper:hover .swiper-button-next,
+  .swiper:hover .swiper-button-prev {
+    opacity: 1;
+  }
+
+  .swiper {
+    position: relative;
+    overflow: hidden;
+    height: 268px;
+  }
+
+  .swiper-items {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+      object-fit: cover;
+    }
+  }
+
+  .swiper-pagination {
+    max-width: max-content;
+    position: absolute;
+    margin-left: 15px;
+    left: unset !important;
+
+    span {
+      height: 4px;
+      opacity: 0.3;
+      transition: width 0.2s ease-in-out;
+      width: 4px;
+      margin-right: 20px;
+
+      &.active {
+        background-color: #fff;
+        border-radius: 20px;
+        height: 6px;
+        opacity: 1;
+        -webkit-transform: translateY(1px);
+        transform: translateY(1px);
+        width: 16px;
+      }
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    transition: all 0.3s;
+    opacity: 0;
+    border: 1px solid #c0c2c5;
+    height: 40px;
+    width: 40px;
+    color: #424750;
+    background-color: #fff;
+    border-radius: 50%;
+
+    &::after {
+      font-size: 0.7rem;
+      font-weight: bolder;
+    }
+  }
+
+  .swiper-button-next {
+    position: absolute;
+    left: unset !important;
+    top: unset !important;
+    margin-bottom: 50px;
+    right: 50px !important;
+  }
+  .swiper-button-prev {
+    position: absolute;
+    left: unset !important;
+    margin-top: 44px;
+    right: 100px !important;
+  }
+
+  .swiper-button-next {
+    bottom: 0 !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper {
+    height: 400px !important;
+  }
+
+  .swiper-pagination {
+    max-width: max-content;
+    position: absolute;
+    left: unset !important;
+    right: 40px !important;
+    bottom: 14px !important;
+  }
+
+  .swiper-button-prev {
+    position: absolute;
+    left: unset !important;
+    margin-top: 110px !important;
+    right: 100px !important;
+  }
+}
