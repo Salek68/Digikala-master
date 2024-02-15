@@ -67,24 +67,22 @@ const ProductsSlider = () => {
         </SwiperSlide>
         {productsSlider.map((product) => {
           return (
-            <SwiperSlide key={product.id} className="product-item">
+            <SwiperSlide key={product._id} className="product-item">
               <a href="#">
                 <div className="product-img-container">
-                  <img src={product.image} alt="" />
+                  <img src={product.img} alt="" />
                 </div>
                 <div className="price-container">
                   <div className="discount-box">
                     <span className="amount-discount">
-                      {ChangerNumToPersian(product.discount)}%
+                      {ChangerNumToPersian(product.gheymat)}
                     </span>
                     <span>
-                      {ChangerNumToPersian(
-                        product.price - (product.price * product.discount) / 100
-                      )}
+                   
                     </span>
                   </div>
                   <div className="price-box">
-                    <span>{ChangerNumToPersian(product.price)}</span>
+                    <span>{product.mahsolname}</span>
                   </div>
                 </div>
               </a>

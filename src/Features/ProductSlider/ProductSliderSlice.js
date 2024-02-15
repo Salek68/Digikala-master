@@ -5,7 +5,7 @@ export const fetchProductsSlider = createAsyncThunk(
   "productsSlider/ProductsSlider",
   async (_, { rejectWithValue }) => {
     try {
-      const res = await axios.get("https://digikala-data.vercel.app/Products");
+      const res = await axios.get("http://localhost:5000/mahsolat");
       return res.data;
     } catch (error) {
       return rejectWithValue([], error);

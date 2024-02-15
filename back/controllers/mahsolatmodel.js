@@ -2,6 +2,7 @@ import mahsolmodel from "../model/mahsolmodel.js";
 export const getallmahsol = async(req,res)=>{
     try{
 const mahsolat = await mahsolmodel.find();
+
 res.json(mahsolat);
     }
     catch(Error){

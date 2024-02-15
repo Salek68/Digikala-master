@@ -101,15 +101,15 @@
 
       .price-box {
         display: flex;
-        justify-content: flex-end;
+
         align-items: center;
-        font-size: 0.9rem;
+        font-size: 20px;
         padding: 0 20px;
         margin-top: 10px;
 
         span {
-          text-decoration: line-through;
-          color: #d4d5d7;
+       
+          color: #6e9af1;
         }
       }
 
